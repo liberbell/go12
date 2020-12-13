@@ -6,5 +6,7 @@ func main() {
 	fmt.Println("\nLast in ---> First Out\n")
 	for x := 0; x < 5; x++ {
 		defer fmt.Println(x, "popped.")
+		fmt.Println(x, "deffered.")
 	}
+	fmt.Println("\n")
 }
