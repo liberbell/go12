@@ -16,6 +16,6 @@ func main() {
 	c := b[:1]
 	printS1("c", c)
 
-	d := d[2:4]
+	d := c[2:4]
 	printS1("d", d)
 }
