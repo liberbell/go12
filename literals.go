@@ -14,5 +14,5 @@ var (
 )
 
 func main() {
-	fmt.Println(r1, r2, r3)
+	fmt.Println(r1, r2, r3, p)
 }
