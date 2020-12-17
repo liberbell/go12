@@ -7,7 +7,7 @@ func fibonacci() func() {
 	y := 1
 	fmt.Println(x)
 
-	return func(x) int {
+	return func() int {
 		x, y = y, x+y
 		return x
 	}
