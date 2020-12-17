@@ -6,3 +6,7 @@ func factorial(x int) int {
 	}
 	return x * factorial(x-1)
 }
+
+func main() {
+	fmt.Println(factorial(9))
+}
