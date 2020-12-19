@@ -7,3 +7,9 @@ func f(msg int) {
 		fmt.Println(msg, ":", i)
 	}
 }
+
+func main() {
+	go f("value of i")
+	var input string
+	fmt.Scanln(&input)
+}
