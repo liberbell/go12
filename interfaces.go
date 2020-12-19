@@ -16,3 +16,8 @@ func (f myFloat) Calc() float64 {
 func (s *Square) Calc() float64 {
 	return math.Sqrt(s.X*s.X + s.Y*s.Y)
 }
+
+func main() {
+	var c Calcer
+	f := myFloat(-math.Sqrt2)
+}
