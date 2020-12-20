@@ -1,5 +1,7 @@
 package main
 
+import "fmt"
+
 func sum(a []int, ch chan int) {
 	sum := 0
 	for _, v := range a {
@@ -16,4 +18,5 @@ func main() {
 	go sum(a[len(a)/2:], ch)
 
 	x, y := <-ch, <-ch
+	fmt.Println(x, y, x+Y)
 }
