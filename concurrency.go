@@ -7,10 +7,14 @@ import (
 
 func main() {
 	fmt.Println("\nMessage from func main, I'm finished.")
+	time.Sleep(time.Millisecond * 1000)
 }
 
 func msg() {
 	for i := 0; i <= 10; i++ {
-		time.Sleep(time.Microsecond * 1000)
+		time.Sleep(time.Millisecond * 1000)
+		if i > 3 {
+			fmt.Println(i, "secconds... yawn")
+		}
 	}
 }
