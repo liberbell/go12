@@ -6,8 +6,10 @@ import (
 )
 
 func main() {
+	msg()
+
 	fmt.Println("\nMessage from func main, I'm finished.")
-	time.Sleep(time.Millisecond * 1000)
+	time.Sleep(time.Millisecond * 5000)
 }
 
 func msg() {
