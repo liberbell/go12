@@ -19,4 +19,5 @@ func msg() {
 			fmt.Println(i, "seconds.")
 		}
 	}
+	fmt.Println("\nMessage from func msg: I'm finishied.")
 }
