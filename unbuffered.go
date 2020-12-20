@@ -13,4 +13,7 @@ func main() {
 
 	ch := make(chan int)
 	go sum(a[:len(a)/2], ch)
+	go sum(a[len(a)/2:], ch)
+
+	x, y := <-ch, <-ch
 }
