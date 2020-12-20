@@ -11,4 +11,8 @@ func main() {
 	fmt.Println("slice[2:]", slice[2:])
 	fmt.Println("len slice ==", len(slice))
 	fmt.Println("cap slice ==", cap(slice))
+
+	for i, v := range slice {
+		slice[i] = v - 5
+	}
 }
