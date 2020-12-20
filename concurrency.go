@@ -15,6 +15,8 @@ func msg() {
 		time.Sleep(time.Millisecond * 1000)
 		if i > 3 {
 			fmt.Println(i, "secconds... yawn")
+		} else {
+			fmt.Println(i, "seconds.")
 		}
 	}
 }
