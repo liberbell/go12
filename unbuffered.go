@@ -18,5 +18,5 @@ func main() {
 	go sum(a[len(a)/2:], ch)
 
 	x, y := <-ch, <-ch
-	fmt.Println(x, y, x+Y)
+	fmt.Println(x, y, x+y)
 }
