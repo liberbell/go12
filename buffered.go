@@ -7,4 +7,5 @@ func main() {
 	c <- 1
 	c <- 3
 	fmt.Println(<-c)
+	fmt.Println(<-c)
 }
