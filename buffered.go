@@ -8,6 +8,10 @@ func main() {
 	c <- 3
 	c <- 4
 	c <- 8
+	c <- 10
+	fmt.Println(<-c)
+	fmt.Println(<-c)
+	fmt.Println(<-c)
 	fmt.Println(<-c)
 	fmt.Println(<-c)
 }
