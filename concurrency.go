@@ -6,7 +6,7 @@ import (
 )
 
 func main() {
-	msg()
+	go msg()
 
 	fmt.Println("\nMessage from func main, I'm finished.")
 	time.Sleep(time.Millisecond * 5000)
