@@ -34,6 +34,10 @@ func main() {
 	slicecopy := make([]int, 8)
 	copy(slicecopy, slice)
 	report("slicecopy", slicecopy)
+
+	fmt.Println("\nLet's slice our slice for a reslice:")
+	reslice := slice[1:5]
+	report("reslice", reslice)
 }
 
 func resize(slice []int) []int {
