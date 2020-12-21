@@ -26,3 +26,10 @@ func main() {
 	slice = resize(slice)
 	fmt.Println("slice:", slice)
 }
+
+func resize(slice []int) []int {
+	for i := 0; i < 8; i++ {
+		slice = append(slice, 1)
+	}
+	return slice
+}
